@@ -25,8 +25,8 @@
     <main>
       <section id="hero">
         <div class="hero-content">
-          <h1>Your Mental Health Matters</h1>
-          <p>Discover a path to better mental well-being with PsyShell</p>
+            <h1 class="cursive">Your <span class="cursive">Mental</span> Health Matters</h1>
+            <p>Discover a path to better mental well-being with <span class="cursive">PsyShell</span></p>
           <button id="openQuizBtn" class="cta-button">Take Quiz</button>
 
         </div>
@@ -36,37 +36,92 @@
       </section>
   
           <!-- Quiz Modal -->
-    <div id="quizModal" class="modal">
-      <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Mental Health Check-In</h2>
-          <div class="quiz-container">
-              <div class="question">
-                  <p>How are you feeling today?</p>
-                  <select id="moodSelect">
-                      <option value="">Select your mood</option>
-                      <option value="great">Great</option>
-                      <option value="good">Good</option>
-                      <option value="okay">Okay</option>
-                      <option value="notGreat">Not Great</option>
-                      <option value="bad">Bad</option>
-                  </select>
-              </div>
-              <div class="question">
-                <p>what are you feeling today?</p>
-                <select id="moodSelect">
-                    <option value="">Select your mood</option>
-                    <option value="great">Great</option>
-                    <option value="good">Good</option>
-                    <option value="okay">Okay</option>
-                    <option value="notGreat">Not Great</option>
-                    <option value="bad">Bad</option>
-                </select>
+          <div id="quizModal" class="modal">
+            <div class="q-modal-content">
+                <span class="close">&times;</span>
+                <div id="emojiContainer" class="emoji-container">
+                    <img src="/images/emoji-icegif-7.gif" alt="Animated emoji" class="emoji">
+                </div>
+                <div id="quizContainer" class="quiz-container">
+                    <h2>Mental Health Check-In</h2>
+                    <div class="question">
+                        <p>How are you feeling today?</p>
+                        <select id="moodSelect">
+                            <option value="">Select your mood</option>
+                            <option value="great">Great</option>
+                            <option value="good">Good</option>
+                            <option value="okay">Okay</option>
+                            <option value="notGreat">Not Great</option>
+                            <option value="bad">Bad</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>What are you feeling today?</p>
+                        <select id="feelingSelect">
+                            <option value="">Select your feeling</option>
+                            <option value="happy">Happy</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="anxious">Anxious</option>
+                            <option value="sad">Sad</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>What are you feeling today?</p>
+                        <select id="feelingSelect">
+                            <option value="">Select your feeling</option>
+                            <option value="happy">Happy</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="anxious">Anxious</option>
+                            <option value="sad">Sad</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>What are you feeling today?</p>
+                        <select id="feelingSelect">
+                            <option value="">Select your feeling</option>
+                            <option value="happy">Happy</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="anxious">Anxious</option>
+                            <option value="sad">Sad</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>What are you feeling today?</p>
+                        <select id="feelingSelect">
+                            <option value="">Select your feeling</option>
+                            <option value="happy">Happy</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="anxious">Anxious</option>
+                            <option value="sad">Sad</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <p>What are you feeling today?</p>
+                        <select id="feelingSelect">
+                            <option value="">Select your feeling</option>
+                            <option value="happy">Happy</option>
+                            <option value="excited">Excited</option>
+                            <option value="calm">Calm</option>
+                            <option value="anxious">Anxious</option>
+                            <option value="sad">Sad</option>
+                        </select>
+                    </div>
+                    <button id="submitQuiz" class="cta-button">Book Appointment</button>
+                </div>
             </div>
-              <button id="submitQuiz" class="cta-button">Book Appiontment</button>
-          </div>
-      </div>
-  </div>
+        </div>
+
+
+
+
+
+  <section id="questions">
+    <h2 class="cursive">Quick Mental Health Check</h2>
+</section>
 
 
         <section id="features">
@@ -77,7 +132,7 @@
             </div>
             <div class="feature">
                 <img src="/images/th2.jpeg" alt="Personalized Care">
-                <h3>Personalized Care</h3>
+                <h3 >Personalized Care</h3>
                 <p>Tailored treatment plans for you</p>
             </div>
             <div class="feature">
@@ -88,26 +143,26 @@
         </section>
 
         <section id="why-choose-us">
-            <h2>Why Choose PsyShell</h2>
+            <h2 class="cursive">Why Choose PsyShell</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <img src="https://heartitout.in/links/wp-content/uploads/2024/01/1-14.png" alt="Holistic Support">
-                    <h3>Holistic Support</h3>
+                    <h3 class="cursive">Holistic Support</h3>
                     <p>Our experts are trained & supervised by senior psychologists to provide exceptional support.</p>
                 </div>
                 <div class="feature-card">
                     <img src="https://heartitout.in/links/wp-content/uploads/2024/01/1-1.png" alt="Affordability">
-                    <h3>Affordability</h3>
+                    <h3 class="cursive">Affordability</h3>
                     <p>Quality mental health support priced with your budget in mind.</p>
                 </div>
                 <div class="feature-card">
                     <img src="https://heartitout.in/links/wp-content/uploads/2024/01/Clip-path-group-14.png" alt="Flexible Scheduling">
-                    <h3>Flexible Scheduling</h3>
+                    <h3 class="cursive">Flexible Scheduling</h3>
                     <p>Late-night sessions available to accommodate your busy life.</p>
                 </div>
                 <div class="feature-card">
                     <img src="https://heartitout.in/links/wp-content/uploads/2024/01/Clip-path-group-15.png" alt="Online Convenience">
-                    <h3>Online Convenience</h3>
+                    <h3 class="cursive">Online Convenience</h3>
                     <p>Accessible mental health support from the comfort of your space.</p>
                 </div>
             </div>
@@ -118,8 +173,8 @@
 
         <section id="about">
             <div class="about-content">
-                <h2>About PsyShell</h2>
-                <p>PsyShell is dedicated to making mental health support accessible and effective for everyone. Our team of expert therapists and innovative approach ensure you receive the best care possible.</p>
+                <h2 class="cursive">About PsyShell</h2>
+                <p>PsyShell is dedicated to making mental health support accessible and effective for everyone. Our team of expert therapists ensures you receive the best care possible.</p>
                 <div class="cta-container">
                   <a href="#" class="cta-button">Learn More</a>
               </div>
@@ -133,7 +188,7 @@
         </section>
 
         <section id="services">
-          <h2>Our Services</h2>
+          <h2 class="cursive">Our Services</h2>
           <div class="service-slider">
               <div class="slider-container">
                   <div class="service-card">
@@ -143,7 +198,7 @@
                   </div>
                   <div class="service-card">
                       <img src="/images/th5.png" alt="Therapist 2">
-                      <h3>Couple Counseling</h3>
+                      <h3 >Couple Counseling</h3>
                       <p>Strengthen your relationship with expert guidance</p>
                   </div>
                   <div class="service-card">
@@ -171,7 +226,7 @@
       </section>
 
         <section id="testimonials">
-            <h2>What Our Clients Say</h2>
+            <h2 class="cursive">What Our Clients Say</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
                     <p>"PsyShell has transformed my life. The therapists are amazing and supportive."</p>
@@ -185,15 +240,31 @@
                     <p>"The personalized care at PsyShell is unmatched. Thank you for everything!"</p>
                     <h4>- Emily T.</h4>
                 </div>
-                <div class="review-form">
-                  <h3>Write a Review</h3>
-                  <form id="reviewForm">
-                      <textarea id="reviewText" placeholder="Share your experience with PsyShell" required></textarea>
-                      <button type="submit" class="cta-button">Submit Review</button>
-                  </form>
-              </div>
+                
             </div>
         </section>
+        <section>
+        <button id="userInfoBtn" class="user-info-btn">Write Review here</button>
+        </section>
+        <div id="userInfoModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Contact Information</h2>
+                <form id="userInfoForm">
+                    <input type="email" id="userEmail" placeholder="Email" required>
+                    <input type="tel" id="userPhone" placeholder="Phone Number" required>
+                    <div class="form-buttons">
+                        <button type="button" id="backBtn" class="cta-button">Back</button>
+                        <button type="button" id="nextBtn" class="cta-button">Next</button>
+                    </div>
+                </form>
+                <div id="reviewContainer" style="display: none;">
+                    <h2>Write a Review</h2>
+                    <textarea id="userReview" placeholder="Share your experience with PsyShell" required></textarea>
+                    <button type="submit" id="submitReview" class="cta-button">Submit Review</button>
+                </div>
+            </div>
+        </div>
 
         <section id="cta">
             <h2>Ready to Start Your Journey?</h2>

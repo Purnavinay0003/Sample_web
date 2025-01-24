@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 
 :root {
-  --primary-color: #6e07f3;
-  --secondary-color: #5be9b9;
-  --text-color: #141c3a;
-  --background-color: #ffffff;
-  --light-background: #f9f9ff;
+  --primary-color: #cad8f5;
+  --secondary-color: #FFF494;
+  --text-color: #333333;
+  --background-color: #128dc2;
+  --primary-color: #6d80df;
+  --secondary-color: #2150f9;
+  --text-color: #110505;
+  --background-color: #3bb5e1;
+  --light-background: linear-gradient(90deg, #706703 0%, #057078 100%);
+  --button-color: #556B2F;
+  --button-hover: #3c4d1f;
+
+
+  --button-color: #2D4059;
+  --button-hover: #1B2B3D;
 }
 
 * {
@@ -32,6 +44,14 @@ body {
   animation: floatEffect 5s ease-in-out infinite;
 }
 
+.cursive {
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+  font-size: 100px;
+}
+
+
+
 header {
   background-color: var(--background-color);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -40,6 +60,7 @@ header {
   top: 0;
   z-index: 1000;
   transition: all 0.3s ease;
+  
 }
 
 header.scrolled {
@@ -105,11 +126,14 @@ nav {
   color: white;
   border: none;
   padding: 10px 20px;
+  margin-top: 20px; /* Adds space above the button */
+  display: inline-block; /* Ensures the button does not expand to full width */
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(110, 7, 243, 0.1);
+  
   
 }
 
@@ -127,9 +151,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 5%;
-  background-color: var(--light-background);
+  padding: 3rem 3%; /* Reduced padding for a smaller size */
+  background: linear-gradient(109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
   overflow: hidden;
+  border-radius: 50px; /* Slightly smaller border radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for a premium feel */
 }
 
 .hero-content {
@@ -185,11 +211,32 @@ main {
   transform: scale(1.05) rotate(2deg);
 }
 
+#questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px; /* Adjust height as needed */
+  background-color: var(--light-background); /* Optional for better visibility */
+}
+
+#questions h2 {
+  font-size: 6rem; /* Adjust the font size as needed */
+  
+  color: black; /* Optional for custom text color */
+}
+
 #features {
   display: flex;
   justify-content: space-around;
-  padding: 5rem 5%;
-  background-color: var(--background-color);
+  padding: 4rem 3%; /* Reduced padding for a more compact look */
+  background: linear-gradient(-109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+
+  border-radius: 15px; /* Adding smooth rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin: 3rem 0;  /* Adds space above and below the section */
+  width: 100%;     /* Ensures the section doesn't overflow */
+  box-sizing: border-box; /* Makes padding part of the element's total width */
 }
 
 .feature {
@@ -227,7 +274,9 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 5rem 5%;
-  background-color: var(--light-background);
+  background: linear-gradient(109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+border-radius: 30px;
+
 }
 
 .about-content {
@@ -298,7 +347,8 @@ main {
 .service-card {
   flex: 0 0 300px;
   margin-right: 20px;
-  background-color: var(--background-color);
+  background: linear-gradient(-109.6deg, rgb(17, 151, 147) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
+
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -554,7 +604,13 @@ footer {
 }
 
 .feature-card {
-    background-color: var(--background-color);
+  background: linear-gradient(45deg, 
+    #d4af37 0%,       /* Gold */
+    #ff5722 25%,      /* Vibrant orange */
+    #03a9f4 50%,      /* Light blue */
+    #8bc34a 75%,      /* Fresh green */
+    #ffeb3b 100%      /* Bright yellow */
+  );
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -583,124 +639,230 @@ footer {
     color: #4f4f4f;
 }
 
+/* Testimonials Section */
 #testimonials {
-    padding: 5rem 5%;
-    background-color: var(--light-background);
-    margin-top: 2rem;
+  padding: 5rem 5%;
+  background-color: var(--light-background);
+  margin-top: 2rem;
 }
 
 .testimonial-slider {
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
 }
 
 .testimonial-slider .slick-slide {
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
 }
 
 .testimonial-slider .slick-active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .testimonial-card {
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--background-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  position: relative;
+  margin: 1rem auto;
+  max-width: 300px;
 }
 
 .testimonial-card p {
-    font-style: italic;
-    margin-bottom: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
 
 .testimonial-card h4 {
-    font-weight: 500;
-    color: var(--primary-color);
+  font-weight: 500;
+  color: var(--primary-color);
 }
 
 @keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .testimonial-card img {
-    border-radius: 50%;
-    max-width: 80px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
+  border-radius: 50%;
+  max-width: 80px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .testimonial-card img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-/* Modal Styles */
+/* Contact Button Positioned at the Bottom */
+.user-info-btn {
+  position: absolute;
+  right: 2rem;
+  top: 5%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-info-btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.user-info-btn:active {
+  background-color: var(--primary-color);
+  transform: translateY(-50%) scale(1);
+}
+
+/* Ensure the parent section has position: relative */
+section {
+  position: relative;
+  min-height: 100px; /* Ensures the button has enough space */
+}
+/* Modal Form */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: #f8f8f8;
+}
+
+.modal-content input:focus,
+.modal-content select:focus,
+.modal-content textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(109, 128, 223, 0.5);
+}
+
+.modal-content .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-content .cta-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .cta-button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #testimonials {
+      padding: 3rem 2%;
+  }
+
+  .testimonial-card {
+      max-width: 90%;
+  }
+
+  .contact-us-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+}
+
+
+/* Add this to your existing CSS */
+
 .modal {
   display: none;
   position: fixed;
-  top: 0;
+  z-index: 1000;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  animation: fadeIn 0.3s ease-in-out;
+  overflow-y: auto;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.modal-content {
-  position: relative;
-  background-color: white;
-  margin: 10% auto;
-  padding: 30px;
+.q-modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
   width: 90%;
   max-width: 500px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  animation: slideIn 0.3s ease-in-out;
-}
-
-@keyframes slideIn {
-  from {
-      transform: translateY(-100px);
-      opacity: 0;
-  }
-  to {
-      transform: translateY(0);
-      opacity: 1;
-  }
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
 }
 
 .close {
+  color: #aaa;
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 20px;
   font-size: 28px;
   font-weight: bold;
-  color: #666;
   cursor: pointer;
-  transition: color 0.3s ease;
 }
 
-.close:hover {
-  color: var(--primary-color);
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
 }
-h2 {
-  color: var(--text-color);
-  margin-bottom: 20px;
+
+.emoji-container {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.emoji {
+  width: 100px;
+  height: 100px;
 }
 
 .quiz-container {
@@ -708,34 +870,19 @@ h2 {
 }
 
 .question {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  
 }
 
 .question p {
-  font-size: 18px;
-  color: var(--text-color);
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 select {
   width: 100%;
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   font-size: 16px;
-  color: var(--text-color);
-  background-color: white;
-  transition: border-color 0.3s ease;
-  margin-bottom: 20px;
-}
-
-select:focus {
-  outline: none;
-  border-color: var(--primary-color);
-}
-
-
-#submitQuiz {
-  width: 100%;
-  margin-top: 10px;
 }
